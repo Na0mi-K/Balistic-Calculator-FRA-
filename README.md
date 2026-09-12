@@ -16,7 +16,7 @@ $$y(t) = \frac{1}{\alpha} \left(v_{y0} + \frac{g}{\alpha}\right) \left(1 - e^{-\
 
 $$e^{-\alpha t} = \sum_{n=0}^{\infty} \frac{(-\alpha t)^n}{n!} = 1 - \alpha t + \frac{\alpha^2 t^2}{2!} - \frac{\alpha^3 t^3}{3!} + \dots$$
 
-**On obtient directement les séries entières polynomiales pour x(t)$ et $y(t) :**
+**On obtient directement les séries entières polynomiales pour $x(t)$ et $y(t)$ :**
 
 $$x(t) = v_{x0} \sum_{n=1}^{\infty} \frac{(-1)^{n-1} \alpha^{n-1}}{n!} t^n = v_{x0} t - \frac{v_{x0} \alpha}{2} t^2 + \frac{v_{x0} \alpha^2}{6} t^3 - \frac{v_{x0} \alpha^3}{24} t^4 + \dots$$
 $$y(t) = v_{y0} t - \left(g + \alpha v_{y0}\right) \frac{t^2}{2} + \frac{\alpha g + \alpha^2 v_{y0}}{6} t^3 - \frac{\alpha^2 g + \alpha^3 v_{y0}}{24} t^4 + \dots$$
