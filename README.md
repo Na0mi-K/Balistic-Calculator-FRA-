@@ -26,7 +26,8 @@ $$y(t) = v_{y0} t - \left(g + \alpha v_{y0}\right) \frac{t^2}{2} + \frac{\alpha 
 $$x(t) \approx v_{x0} t \left(1 - \frac{\alpha t}{2} + \frac{\alpha^2 t^2}{6} - \frac{\alpha^3 t^3}{24}\right)$$
 $$y(t) \approx v_{y0} t - \frac{g + \alpha v_{y0}}{2} t^2 + \frac{\alpha(g + \alpha v_{y0})}{6} t^3 - \frac{\alpha^2(g + \alpha v_{y0})}{24} t^4$$
 
-**Calcul sans trigonométrie pour l'angle d'attaqueSi la vitesse initiale V0 et l'angle theta sont donnés sous forme de vecteur $(u_x, u_y)$ unitaire au lieu d'un angle en degrés :**
+**Calcul sans trigonométrie pour l'angle d'attaque**
+**Si la vitesse initiale V0 et l'angle theta sont donnés sous forme de vecteur $(u_x, u_y)$ unitaire au lieu d'un angle en degrés :**
 - $v_{x0} = V_0 \cdot u_x$
 - $v_{y0} = V_0 \cdot u_y$
 Cela évite totalement l'usage de cos(theta) et sin(theta).
