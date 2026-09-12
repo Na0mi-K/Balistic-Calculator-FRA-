@@ -40,7 +40,7 @@ $$y(t)\approx v_\text{y0}t - \frac{(g+\alpha v_\text{y0})}{2}t^2 + \frac{\alpha(
 
 $$x(t) \approx v_{x_0}t \left( 1 + t \left( -\frac{\alpha}{2} + t \left( \frac{\alpha^2}{6} + t \left( -\frac{\alpha^3}{24} \right) \right) \right) \right)$$
 
-$$y(t) \approx t \left[ v_{y_0} + t \left( -\frac{g + \alpha v_{y_0}}{2} + t \left( \frac{\alpha(g + \alpha v_{y_0})}{6} + t \left( -\frac{\alpha^2(g + \alpha v_{y_0})}{24} \right) \right) \right) \right]$$
+$$\boxed{y(t) \approx t \left[ v_{y_0} + t \left( -\frac{g + \alpha v_{y_0}}{2} + t \left( \frac{\alpha(g + \alpha v_{y_0})}{6} + t \left( -\frac{\alpha^2(g + \alpha v_{y_0})}{24} \right) \right) \right) \right]}$$
 
 Cela minimise le nombre d’opérations et évite toute fonction transcendante.
 
