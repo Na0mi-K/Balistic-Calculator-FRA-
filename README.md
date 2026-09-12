@@ -32,8 +32,19 @@ $$y(t) \approx v_{y0} t - \frac{g + \alpha v_{y0}}{2} t^2 + \frac{\alpha(g + \al
 - $v_{y0} = V_0 \cdot u_y$
 Cela évite totalement l'usage de cos(theta) et sin(theta).
 
-On peut la mettre sous une forme encore plus “compacte” en factorisant par $(g+αv_y0)$ . Ou, si on veut un schéma de Horner pour l’évaluation numérique . Cela minimise le nombre d’opérations et évite toute fonction transcendante.
-La série converge pour tout t (exponentielle entière), mais l’approximation tronquée à l’ordre 4 n’est précise que tant que 𝛼𝑡 reste “modéré”. Un ordre de grandeur utile :
+**On peut la mettre sous une forme encore plus “compacte” en factorisant par $(g+αv_y0)$ :**
+
+$$y(t)\approx v_\text{y0}t - \frac{(g+\alpha v_\text{y0})}{2}t^2 + \frac{\alpha(g+\alpha v_\text{y0})}{6}t^3 - \frac{\alpha ^2(g+\alpha v_\text{y0})}{24}t^4$$
+
+**Ou, si on veut un schéma de Horner pour l’évaluation numérique . **
+
+$$x(t) \approx v_{x_0}t \left( 1 + t \left( -\frac{\alpha}{2} + t \left( \frac{\alpha^2}{6} + t \left( -\frac{\alpha^3}{24} \right) \right) \right) \right)$$
+
+$$y(t) \approx t \left[ v_{y_0} + t \left( -\frac{g + \alpha v_{y_0}}{2} + t \left( \frac{\alpha(g + \alpha v_{y_0})}{6} + t \left( -\frac{\alpha^2(g + \alpha v_{y_0})}{24} \right) \right) \right) \right]$$
+
+Cela minimise le nombre d’opérations et évite toute fonction transcendante.
+
+**La série converge pour tout t (exponentielle entière), mais l’approximation tronquée à l’ordre 4 n’est précise que tant que 𝛼𝑡 reste “modéré”. Un ordre de grandeur utile :**
 - Si $αt≲0.5$ , l’erreur relative sur $x(t)$ et $y(t)$ est typiquement de l’ordre de αt^5/120 donc très petite.
 - Si $αt≳1$ , la troncature à l’ordre 4 commence à montrer des écarts notables par rapport à la solution exponentielle exacte.
 
