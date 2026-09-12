@@ -1,6 +1,6 @@
 # Programme par NaomiK , FluoroPolymers™
 
-# Calculer des trajectoires balistiques sans utiliser aucune trigonométrie:
+***Calculer des trajectoires balistiques sans utiliser aucune trigonométrie:***
 
 **Les équations différentielles séparées avec une masse m, une gravité g, un coefficient de frottement k (posons $\alpha = k/m$) et des vitesses initiales $v_{x0}, v_{y0}$ sont :**
 
