@@ -36,7 +36,7 @@ Cela évite totalement l'usage de cos(theta) et sin(theta).
 
 $$y(t)\approx v_\text{y0}t - \frac{(g+\alpha v_\text{y0})}{2}t^2 + \frac{\alpha(g+\alpha v_\text{y0})}{6}t^3 - \frac{\alpha ^2(g+\alpha v_\text{y0})}{24}t^4$$
 
-**Ou, si on veut un schéma de Horner pour l’évaluation numérique . **
+**Ou, si on veut un schéma de Horner pour l’évaluation numérique .**
 
 $$x(t) \approx v_{x_0}t \left( 1 + t \left( -\frac{\alpha}{2} + t \left( \frac{\alpha^2}{6} + t \left( -\frac{\alpha^3}{24} \right) \right) \right) \right)$$
 
