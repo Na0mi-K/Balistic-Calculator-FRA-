@@ -1,4 +1,4 @@
-# Program by NaomiK , FluoroPolymers™
+# Programme par NaomiK , FluoroPolymers™
 
 #Calculer des trajectoires balistiques sans utiliser aucune trigonométrie :
 
