@@ -2,7 +2,7 @@
 
 #Calculer des trajectoires balistiques sans utiliser aucune trigonométrie :
 
-**Les équations différentielles séparées avec une masse m, une gravité g, un coefficient de frottement k (posons \alpha = k/m) et des vitesses initiales $v_{x0}, v_{y0}$ sont :**
+**Les équations différentielles séparées avec une masse m, une gravité g, un coefficient de frottement k (posons $\alpha = k/m$) et des vitesses initiales $v_{x0}, v_{y0}$ sont :**
 
 $$\ddot{x} + \alpha \dot{x} = 0$$
 $$\ddot{y} + \alpha \dot{y} = -g$$
