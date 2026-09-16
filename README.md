@@ -66,8 +66,6 @@ j'ai choisi ***Euler*** car Verlet demande une structure de code que je n'aime p
 - tiré à 60° 
 - à 650 m/s 
 
-Le programme actuel prédit ***exactement*** le comportement d'une telle situation .
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Point Important : 
