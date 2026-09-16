@@ -58,10 +58,8 @@ En pratique, pour des projectiles dans l’air avec résistance linéaire (modè
 
 - Un tir purement horizontal (*c'est nul et trop limité*)
 - Développement en série de ***Taylor quadratique*** : calcul des dérivées successives à t=0 pour réobtenir un polynôme à évaluer en Horner, bien que sa portée temporelle soit plus limitée qu'en linéaire
-
-ou alors la solution vraiment intéressante à mon sens : L' Intégration numérique explicite (Euler semi-implicite / Verlet)
-
-- **RK4** — plus précis à pas égal, un peu plus de code, utile si vous voulez comparer la précision numérique elle-même (au-delà de la comparaison Taylor vs exact qu'on a déjà déjà).
+- la solution vraiment intéressante à mon sens : L' Intégration numérique explicite (Euler semi-implicite / Verlet)
+- **RK4** — plus précis à pas égal, un peu plus de code, utile si on veut comparer la précision numérique elle-même (au-delà de la comparaison Taylor vs exact qu'on a déjà déjà).
 
 j'ai choisi ***Euler*** car Verlet demande une structure de code que je n'aime pas , et franchement Euler était bien plus simple à intégrer à mon code sans perte de précision . Par exemple pour un projectile :
 - de 5 Kg 
