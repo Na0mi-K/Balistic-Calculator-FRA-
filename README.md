@@ -72,6 +72,9 @@ j'ai choisi ***Euler*** car Verlet demande une structure de code que je n'aime p
 
 **L'explosion de l'erreur en fin de vol : La hausse brutale de l'écart relatif** sur $y(t)$ à la toute fin ($t \approx 27\text{ s}$) est ***normale***. Elle vient du fait que $y(t)$ s'approche de $0$ juste avant l'impact : **diviser un petit écart absolu par une valeur tend vers zéro fait exploser l'erreur relative en pourcentage, sans que cela ne traduisent un vrai décrochage physique.**
 
+*« Le calcul semble numériquement convergent et suffisamment précis pour ce pas de temps, sous réserve que l’accélération quadratique soit implémentée correctement. »*
+en effet on ne peut pas dire que ce modèle soit parfait , en fait il ne l'est pas du tout pour la simple raison qu'il est en deux dimension et oublie beaucoup de facteurs , dans la vrai vie : les projectiles ont leurs propres propriétés aérodynamique et frictionnelles , les vents font varier les forces sur le projectile de manière opposées ou latérales ce qui dévie la trajectoire , les précipitations jouent un grand rôle aussi.... Il faut prendre ce modèle pour ce qu'il est : une simulation mathématique très simplifiée et surtout une preuve qu'on peut se débrouiller dans certains cas sans fonctions trigonométriques .
+
  **Ici le modèle prend en compte des objets quelconques sans propriétés aérodynamiques avantageuses. Le coefficient de frottement choisi représente donc un air relativement dense ou un projectile très peu aérodynamique (un obus réel de $5\text{ kg}$ aurait un $k_2$ nettement plus faible et une bien meilleure portée).**
  
  *( La simulation est correcte et réaliste pour un objet subissant une forte traînée aérodynamique (* $k_2 = 0,01$ *)*
