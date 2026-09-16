@@ -51,3 +51,22 @@ Cela minimise le nombre d’opérations et évite toute fonction transcendante.
 En pratique, pour des projectiles dans l’air avec résistance linéaire (modèle idéalisé, valable plutôt à faible nombre de Reynolds), α est souvent petit, donc sur la durée typique de vol, αt peut rester dans un domaine où l’ordre 4 est excellent
 - *On peut Augmenter l’ordre du développement (5, 6, …) jusqu’à ce que le terme suivant soit négligeable*
 - *Utiliser la forme exponentielle exacte (souvent très bien optimisée sur CPU/GPU).*
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ça marche pour des projectiles très légers mais une vraie résistance de l'air n'est pas linéaire . *Si mon projectile a une masse de 1 Kg ou plus il va falloir calculer les choses quadratiquement et ça change tout car c'est plus compliqué en termes de solutions formelles.* J'ai quelques options devant moi : 
+
+- Un tir purement horizontal (*c'est nul et trop limité*)
+- Développement en série de ***Taylor quadratique*** : calcul des dérivées successives à t=0 pour réobtenir un polynôme à évaluer en Horner, bien que sa portée temporelle soit plus limitée qu'en linéaire
+
+ou alors la solution vraiment intéressante à mon sens : L' Intégration numérique explicite (Euler semi-implicite / Verlet)
+
+- **RK4** — plus précis à pas égal, un peu plus de code, utile si vous voulez comparer la précision numérique elle-même (au-delà de la comparaison Taylor vs exact qu'on a déjà déjà).
+
+j'ai choisi ***Euler*** car Verlet demande une structure de code que je n'aime pas , et franchement Euler était bien plus simple à intégrer à mon code sans perte de précision . Par exemple pour un projectile :
+- de 5 Kg 
+- tiré à 60° 
+- à 650 m/s 
+Le programme actuel prédit ***exactement*** le comportement d'une telle situation .
+
+
