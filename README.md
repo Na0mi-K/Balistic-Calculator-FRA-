@@ -79,9 +79,10 @@ Le programme actuel prédit ***exactement*** le comportement d'une telle situati
  *( La simulation est correcte et réaliste pour un objet subissant une forte traînée aérodynamique (* $k_2 = 0,01$ *)*
 
  *infos sur la simulation ci dessous :* 
- $v = 650 m/s$
- $m = 5 Kg$
- $\theta = 60°$
+ 
+ - $v = 650 m/s$
+ - $m = 5 Kg$
+ - $\theta = 60°$
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <img width="1300" height="550" alt="Image" src="https://github.com/user-attachments/assets/173cdba8-6e5b-4d9e-a2fd-13c985286e7c" />
