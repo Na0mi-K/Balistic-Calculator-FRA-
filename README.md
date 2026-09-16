@@ -76,7 +76,7 @@ Le programme actuel prédit ***exactement*** le comportement d'une telle situati
 
 **L'explosion de l'erreur en fin de vol : La hausse brutale de l'écart relatif** sur $y(t)$ à la toute fin ($t \approx 27\text{ s}$) est ***normale***. Elle vient du fait que $y(t)$ s'approche de $0$ juste avant l'impact : **diviser un petit écart absolu par une valeur tend vers zéro fait exploser l'erreur relative en pourcentage, sans que cela ne traduisent un vrai décrochage physique.**
 
- **Ici le modèle prend en compte des objets quelconques sans propriétés aérodynamiques avantageuses. e coefficient de frottement choisi représente donc un air relativement dense ou un projectile très peu aérodynamique (un obus réel de $5\text{ kg}$ aurait un $k_2$ nettement plus faible et une bien meilleure portée).**
+ **Ici le modèle prend en compte des objets quelconques sans propriétés aérodynamiques avantageuses. Le coefficient de frottement choisi représente donc un air relativement dense ou un projectile très peu aérodynamique (un obus réel de $5\text{ kg}$ aurait un $k_2$ nettement plus faible et une bien meilleure portée).**
  
  *( La simulation est correcte et réaliste pour un objet subissant une forte traînée aérodynamique (* $k_2 = 0,01$ *)*
 
