@@ -76,7 +76,7 @@ Le programme actuel prédit ***exactement*** le comportement d'une telle situati
 
  **Ici le modèle prend en compte des objets quelconques sans propriétés aérodynamiques avantageuses. e coefficient de frottement choisi représente donc un air relativement dense ou un projectile très peu aérodynamique (un obus réel de $5\text{ kg}$ aurait un $k_2$ nettement plus faible et une bien meilleure portée).**
  
- *( La simulation est correcte et réaliste pour un objet subissant une forte traînée aérodynamique ($k_2 = 0,01$)*
+ *( La simulation est correcte et réaliste pour un objet subissant une forte traînée aérodynamique ( $k_2 = 0,01$ )*
  
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
