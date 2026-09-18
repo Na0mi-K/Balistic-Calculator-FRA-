@@ -61,7 +61,7 @@ En pratique, pour des projectiles dans l’air avec résistance linéaire (modè
 - la solution vraiment intéressante à mon sens : L' Intégration numérique explicite (Euler semi-implicite / Verlet)
 - **RK4** — plus précis à pas égal, un peu plus de code, utile si on veut comparer la précision numérique elle-même (au-delà de la comparaison Taylor vs exact qu'on a déjà déjà).
 
-j'ai choisi ***Euler*** car Verlet demande une structure de code que je n'aime pas , et franchement Euler était bien plus simple à intégrer à mon code . Pour être sûre j'ai aussi intégré RK4 avec des valeurs sûres de référence comme ça on peut juger de la qualité de la simulation nous même en se fiant aux écarts entre Euler et RK4
+*j'ai choisi ***Euler*** car Verlet demande une structure de code que je n'aime pas , et franchement Euler était bien plus simple à intégrer à mon code . Pour être sûre j'ai aussi intégré RK4 avec des valeurs sûres de référence comme ça on peut juger de la qualité de la simulation nous même en se fiant aux écarts entre Euler et RK4*
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  # Point Important : 
